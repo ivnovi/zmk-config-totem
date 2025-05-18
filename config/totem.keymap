@@ -42,7 +42,7 @@
         combo_tvp {
             timeout-ms = <100>;
             key-positions = <11 12 13>;
-            bindings = <&tog TVP1>;
+            bindings = <&tog 4>;
         };
     };
 
@@ -85,10 +85,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q       &kp W       &kp E        &kp R         &kp T      &kp Y        &kp U          &kp I         &kp O       &kp P
-         &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F   &kp G      &kp H        &mt RSHFT J    &mt RCTRL K   &mt RALT L  &mt RGUI SEMICOLON
-&kp ESC  &kp Z       &kp X       &kp C        &kp V         &kp B      &kp N        &kp M          &kp COMMA     &kp DOT     &kp FSLH            &kp BSLH
-                                 &kp ESC      &lt NAV BSPC  &kp TAB    &lt 2 ENTER  &lt SYM SPACE  &lt 5 DELETE
+         &kp Q       &kp W       &kp E        &kp R        &kp T      &kp Y        &kp U        &kp I         &kp O       &kp P
+         &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G      &kp H        &mt RSHFT J  &mt RCTRL K   &mt RALT L  &mt RGUI SEMICOLON
+&kp ESC  &kp Z       &kp X       &kp C        &kp V        &kp B      &kp N        &kp M        &kp COMMA     &kp DOT     &kp FSLH            &kp BSLH
+                                 &kp ESC      &lt 1 BSPC   &kp TAB    &lt 2 ENTER  &lt 2 SPACE  &lt 5 DELETE
             >;
         };
 
@@ -172,10 +172,10 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        tvp1_layer {
+        num_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "TVP 1";
+            label = "NUM";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -189,10 +189,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB     &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &none  &none  &none  &none  &none
-       &lt TVP2 L  &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &none  &none  &none  &none
-&kp J  &kp LSHFT   &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &none  &none  &none  &none  &none  &none
-                              &trans        &kp LC(F14)  &kp LC(F13)    &none  &none  &none
+        &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET       &none  &none      &none      &none     &none
+        &kp SQT           &kp N4  &kp N5  &kp N6  &kp EQUAL               &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
+&trans  &kp GRAVE         &kp N1  &kp N2  &kp N3  &kp NON_US_BACKSLASH    &none  &none      &none      &kp RALT  &kp RGUI  &none
+                                  &trans  &kp N0  &kp LC(F13)             &none  &none      &none
             >;
         };
 
@@ -219,15 +219,6 @@
         &kp F11  &kp F4  &kp F5  &kp F6       &kp RET            &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
 &trans  &kp F10  &kp F1  &kp F2  &kp F3       &kp PAUSE_BREAK    &trans  &kp F1     &kp F2     &kp RALT  &kp RGUI  &trans
                          &trans  &kp LC(F12)  &kp LC(F11)        &trans  &trans     &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
