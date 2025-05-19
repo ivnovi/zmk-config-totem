@@ -79,9 +79,9 @@
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
             //             ┃     A     ┃     R     ┃     S     ┃     T     ┃     D     ┃   ┃     H     ┃     N     ┃     E     ┃     I     ┃     O     ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃     Q     ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     \     ┃
+            // ┃    ESC    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     \     ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃    DEL    ┃    TAB    ┃    SPC    ┃   ┃   ENTER   ┃           ┃   BSPC    ┃
+            //                                     ┃    ESC    ┃    BSPC   ┃    TAB    ┃   ┃   ENTER   ┃           ┃   DEL     ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
@@ -217,8 +217,8 @@
             bindings = <
         &kp F12  &kp F7  &kp F8  &kp F9       &kp LS(F)          &trans  &trans     &trans     &trans    &trans
         &kp F11  &kp F4  &kp F5  &kp F6       &kp RET            &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
-&trans  &kp F10  &kp F1  &kp F2  &kp F3       &kp PAUSE_BREAK    &trans  &kp F1     &kp F2     &kp RALT  &kp RGUI  &trans
-                         &trans  &kp LC(F12)  &kp LC(F11)        &trans  &trans     &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3       &kp PAUSE_BREAK    &trans  &trans     &trans     &kp RALT  &kp RGUI  &trans
+                         &trans  &trans       &trans             &trans  &trans     &trans
             >;
         };
 
