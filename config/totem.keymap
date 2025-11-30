@@ -85,9 +85,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q       &kp W       &kp E        &kp R        &kp T      &kp Y        &kp U        &kp I         &kp O       &kp P
-           &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G      &kp H        &mt RSHFT J  &mt RCTRL K   &mt RALT L  &mt RGUI SEMICOLON
-&lt 3 ESC  &kp Z       &kp X       &kp C        &kp V        &kp B      &kp N        &kp M        &kp COMMA     &kp DOT     &kp FSLH            &lt 3 BSLH
+           &kp Q       &kp W       &kp E        &kp R        &kp T      &kp Y        &kp U        &kp I         &kp O        &kp P
+           &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G      &kp H        &mt LSHFT J  &mt LCTRL K   &mt LALT L   &mt LGUI SEMICOLON
+&lt 3 ESC  &kp Z       &kp X       &kp C        &kp V        &kp B      &kp N        &mt RSHFT M  &kp COMMA     &mt RALT DOT &kp FSLH            &lt 3 BSLH
                                    &lt 6 ESC    &lt 1 BSPC   &kp TAB    &lt 2 ENTER  &lt 4 SPACE  &lt 5 DELETE
             >;
         };
@@ -215,8 +215,8 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp F12  &kp F7  &kp F8   &kp F9    &none              &none  &none      &none      &none     &none
-        &kp F11  &kp F4  &kp F5   &kp F6    &none              &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
+        &kp F12  &kp F7  &kp F8   &kp F9    &kp PRINTSCREEN    &none  &none      &none      &none     &none
+        &kp F11  &kp F4  &kp F5   &kp F6    &kp CAPSLOCK       &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
 &trans  &kp F10  &kp F1  &kp F2   &kp F3    &kp PAUSE_BREAK    &none  &none      &none      &kp RALT  &kp RGUI  &none
                          &kp ESC  &kp BSPC  &kp TAB            &none  &none      &none
             >;
